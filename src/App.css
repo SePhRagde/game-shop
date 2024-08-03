@@ -2,24 +2,24 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #eaeaea; /* Color de fondo gris claro */
+  background-color: #eaeaea;
   color: #333;
 }
 
 .navbar {
-  background-color: #222; /* Negro suave para la barra de navegación */
+  background-color: #222;
 }
 
 .navbar-brand {
-  color: #4caf50; /* Verde más suave para el nombre de la tienda */
+  color: #4caf50; 
 }
 
 .nav-link {
-  color: #ffc107; /* Amarillo mostaza para los enlaces de navegación */
+  color: #ffc107;
 }
 
 .nav-link:hover {
-  color: #4caf50; /* Verde más suave para el hover */
+  color: #4caf50;
 }
 
 .cart-widget {
@@ -32,7 +32,7 @@ body {
   position: absolute;
   top: -10px;
   right: -10px;
-  background-color: #4caf50; /* Verde más suave para la insignia del carrito */
+  background-color: #4caf50;
   color: #fff;
 }
 
@@ -41,8 +41,8 @@ body {
 }
 
 .item-list-container {
-  background-color: #333; /* Negro suave para el contenedor de la lista de ítems */
-  color: #ffc107; /* Amarillo mostaza para el texto del contenedor */
+  background-color: #333; 
+  color: #ffc107; 
   padding: 20px;
   border-radius: 8px;
 }
@@ -61,10 +61,10 @@ body {
 
 .console-icons i {
   font-size: 3rem;
-  color: #4caf50; /* Verde más suave para los íconos de consolas */
+  color: #4caf50;
   transition: color 0.3s;
 }
 
 .console-icons i:hover {
-  color: #ffc107; /* Amarillo mostaza para el hover en los íconos de consolas */
+  color: #ffc107;
 }
