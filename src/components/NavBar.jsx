@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import CartWidget from './CartWidget';
+import { CartContext } from '../context/CartContext.jsx';
+import CartWidget from './CartWidget.jsx';
 
 const NavBar = () => {
+  const { cart } = useContext(CartContext);
+  
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -21,8 +24,11 @@ const NavBar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/category/accesorios">Accesorios</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/checkout">Carrito</Link>
+            </li>
           </ul>
-          <CartWidget />
+          <CartWidget itemCount={cart.length} />
         </div>
       </div>
     </nav>

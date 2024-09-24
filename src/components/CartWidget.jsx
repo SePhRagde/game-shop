@@ -2,11 +2,13 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaShoppingCart } from 'react-icons/fa';
 
-const CartWidget = () => {
+const CartWidget = ({ itemCount }) => {
   return (
     <div className="cart-icon">
       <FaShoppingCart size={30} />
-      <span className="badge bg-primary">2</span>
+      {itemCount > 0 && (
+        <span className="badge bg-primary">{itemCount}</span>
+      )}
     </div>
   );
 };
